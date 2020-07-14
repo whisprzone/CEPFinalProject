@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Graph of results versus time</title>
+		<meta charset="utf-8">
+		<meta name = "description" content = "backtestingbaby">
+		<link rel = "stylesheet" href = "{{ url_for('static', filename = 'graph.css' ) }}">
+		<link href = "https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel = "stylesheet">
+	</head>
+	<body>
+		<div class = "combined_results">
+		<img src = "{{ pnl_chart }}">
+		<div class = "info_card">
+			<p1> Returns: {{ returns }}</p1><br><br>
+			<p2> Starting portfolio value: {{ starting_value }} </p2><br>
+			<p3> Ending portfolio value: {{ ending_value }} </p3><br>
+			<p2> Yearly returns: {{ yearly_returns }} </p2><br>
+		</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name = "description" content = "backtestingbaby">
+	<title> AI Trading </title>
+	
+	<link rel = "stylesheet" href = "{{ url_for('static', filename = 'index.css') }}">
+	<link href = 'https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel = 'stylesheet'> 
+
+	</head>
+	<body>
+		<div class = "bgImageContainer">
+		</div>
+		<div class = "bgText">
+		<h1 class = "instruction">Choose a stock to search for</h1> 
+		<form class = "combinedsearch" name = "combinedsearch" method="POST">
+
+		<input type = "text" placeholder = "Search..." name = "searchbar" class = "searchbar">
+		<button type = "submit" class = "searchbtn" action = "POST"><img src="https://icon-library.com/images/search-icon-white-png/search-icon-white-png-3.jpg" style = "height: 20px;"></button><br>
+		<p1 style ="font-family: 'SourceSansPro';"> {{ error_message }} </p1>
+		</form>
+
+	</body>
+	
+
+</html>

@@ -1,0 +1,141 @@
+
+.fade-in {
+  animation: fadeIn ease 10s;
+  -webkit-animation: fadeIn ease 10s;
+  -moz-animation: fadeIn ease 10s;
+  -o-animation: fadeIn ease 10s;
+  -ms-animation: fadeIn ease 10s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
+}
+html {
+	overflow-x: hidden;
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	font-family: 'Source Sans Pro';
+	margin: 0;
+}
+.bgImageContainer {
+	height: 100%;
+	width: 100%;
+	background-image: url("https://images.pexels.com/photos/241544/pexels-photo-241544.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+	filter: blur(4px);
+	-webkit-filter: blur(4px);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 0;
+	animation: fadeIn ease-in 4s;
+
+}
+.bgText {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	align-items: center;
+	height: 10%;
+	z-index: 2;
+	width: 80%;
+	text-align: center;
+	margin: auto auto;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255);
+}
+.bgText .instruction {
+	color: black;
+	font-family: 'Source Sans Pro';
+	font-size: 20px;
+}
+
+.bgText .combinedsearch{
+	height: 50px;
+	padding: 0;
+	width: 70%;
+	margin: auto;
+	box-shadow: 3px 3px 3px gray;
+}
+.bgText .combinedsearch .searchbar {
+	font-family: 'Source Sans Pro';
+	text-align: center;
+	border: 0;
+	height: 50px;
+	float: left;
+	width: 90%;
+	background-color: #4a4af5;
+	color: white;
+	margin: 0;
+	padding: 0;
+}
+.bgText .combinedsearch .searchbtn {
+	background-color: #3F5185;
+	color: white;
+	border-right: 0px;
+	border-top: 0px;
+	border-bottom: 0px;
+	height: 50px;
+	float: right;
+	border-color: white;
+	width: 10%;
+	padding: 0;
+}
+::placeholder {
+	color: lightgray;
+	opacity: 1;
+}
+::-ms-input-placeholder {
+	color: gray;
+}
+
+

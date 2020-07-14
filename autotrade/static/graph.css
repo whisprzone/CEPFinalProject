@@ -1,0 +1,88 @@
+html {
+	overflow-x: hidden;
+	overflow-y: hidden;
+	height: 100%;
+}
+body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+.combined_results {
+	width: 60%;
+	top: 50%;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px grey;
+	height: 50%;
+}
+
+img {
+	height: 100%;
+	width: 60%;
+}
+.info_card {
+	float: right;
+	padding: 11px;
+	width: 35%;
+	font-family: 'Source Sans Pro';
+	height: 50%;
+}
+
+.info_card p1{
+	font-family: 'Source Sans Pro';
+	font-size: 20pt;
+}
+
+.info_card p2{
+	font-family: 'Source Sans Pro';
+	font-size: 15pt;
+}
+.info_card p3{
+	font-family: 'Source Sans Pro';
+	font-size: 15pt;
+}
+
+.info_card .masterform {
+	padding: 0;
+	height: 50px;
+	width: 80%;
+	box-shadow: 3px 3px 3px 3px lightgray;
+}
+.info_card .masterform .newstock {
+	font-family: 'Source Sans Pro';
+	text-align: center;
+	border: 0;
+	height: 50px;
+	float: left;
+	width: 80%;
+	background-color: #4a4af5;
+	color: white;
+	margin: 0;
+	padding: 0;
+}
+.info_card .masterform .searchbtn {
+	background-color: #3F5185;
+	color: white;
+	border-right: 0px;
+	border-top: 0px;
+	border-bottom: 0px;
+	height: 50px;
+	float: right;
+	width: 20%;
+	padding: 0;
+	font-family: 'Source Sans Pro';
+}
+
+::placeholder {
+	color: lightgray;
+	opacity: 1;
+}
+::-ms-input-placeholder {
+	color: gray;
+}
